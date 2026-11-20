@@ -1,0 +1,59 @@
+# Configuración del sitio Hugo de los apuntes de Despliegue de plataformas de contenedores
+# En GitHub Pages la Action sobrescribe baseURL con la URL real del sitio.
+baseURL = "https://lorenalresusta.github.io/Contenedores/"
+locale = "es-es"
+title = "Despliegue de contenedores · Docker y Kubernetes"
+theme = "hugo-book"
+copyright = "Apuntes de Despliegue de plataformas de ejecución de contenedores · Curso 2026/27"
+
+defaultContentLanguage = "es"
+
+[languages]
+  [languages.es]
+    label = "Castellano"
+    weight = 1
+    contentDir = "content.es"
+
+[params]
+  BookSection = '/'
+  BookToC = true
+  BookSearch = true
+  # light | dark | auto (sigue el tema del sistema operativo)
+  BookTheme = 'auto'
+  BookComments = false
+  BookPortableLinks = 'warning'
+  BookDateFormat = '02/01/2006'
+  BookRepo = 'https://github.com/LorenaLResusta/Contenedores'
+
+[markup]
+  [markup.goldmark.renderer]
+    # Necesario para Mermaid y los bloques HTML de los shortcodes
+    unsafe = true
+  [markup.highlight]
+    style = "github"
+    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menu]
+  [[menu.after]]
+    name = "Documentación de Docker"
+    url = "https://docs.docker.com/"
+    weight = 10
+  [[menu.after]]
+    name = "Documentación de Kubernetes"
+    url = "https://kubernetes.io/es/docs/home/"
+    weight = 20
+  [[menu.after]]
+    name = "Gateway API"
+    url = "https://gateway-api.sigs.k8s.io/"
+    weight = 30
+  [[menu.after]]
+    name = "OWASP Docker Security Cheat Sheet"
+    url = "https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html"
+    weight = 40

@@ -1,0 +1,73 @@
+# Resultados de Aprendizaje (RA) y Criterios de Evaluación (CE)
+# Curso «Despliegue de plataformas de ejecución de contenedores: instalación y gestión» (120 h)
+#
+# PROPUESTA DIDÁCTICA. No se ha localizado un texto oficial publicado con RA y CE para este
+# curso, así que estos se han redactado a partir de los contenidos del programa (UD1-UD5),
+# con el mismo estilo que los RA de los títulos de FP. Si el curso tiene RA oficiales,
+# sustituye el texto aquí: el shortcode {{< ra >}} los mostrará en todas las páginas.
+RA1:
+  titulo: "Caracteriza la virtualización ligera, describiendo los mecanismos del sistema operativo que la hacen posible y comparándola con la virtualización basada en hipervisores."
+  ce:
+    a: "Se han identificado las diferencias entre virtualización completa, paravirtualización y virtualización a nivel de sistema operativo."
+    b: "Se han descrito los espacios de nombres (namespaces) del núcleo Linux y el aislamiento que proporciona cada uno."
+    c: "Se ha explicado el papel de los grupos de control (cgroups) en la limitación y contabilidad de recursos."
+    d: "Se ha descrito el funcionamiento de los sistemas de archivos en capas y la copia en escritura."
+    e: "Se han identificado los estándares de la OCI y los componentes de un entorno de ejecución de contenedores."
+    f: "Se han valorado las ventajas e inconvenientes de los contenedores frente a las máquinas virtuales en cuanto a portabilidad, eficiencia y seguridad."
+    g: "Se ha construido manualmente un entorno aislado con las herramientas del sistema para comprobar los mecanismos estudiados."
+RA2:
+  titulo: "Instala y configura motores de contenedores, gestionando el ciclo de vida de los contenedores en distintos sistemas operativos."
+  ce:
+    a: "Se han instalado y configurado Docker Engine, Podman o containerd desde los repositorios oficiales."
+    b: "Se han configurado el demonio, los permisos de usuario y el modo sin privilegios (rootless)."
+    c: "Se han creado, iniciado, detenido, pausado y eliminado contenedores utilizando la línea de comandos."
+    d: "Se han aplicado políticas de reinicio y límites de CPU y memoria a los contenedores."
+    e: "Se han depurado contenedores consultando registros, procesos, eventos y estado interno."
+    f: "Se ha comparado el funcionamiento de distintos motores y su compatibilidad con las imágenes OCI."
+    g: "Se ha documentado la instalación y la configuración realizadas."
+RA3:
+  titulo: "Construye, distribuye y combina imágenes de contenedor, definiendo aplicaciones compuestas por varios servicios."
+  ce:
+    a: "Se han creado imágenes mediante Dockerfile aplicando buenas prácticas de tamaño, caché y reproducibilidad."
+    b: "Se han utilizado construcciones en varias etapas (multi-stage) para separar compilación y ejecución."
+    c: "Se han etiquetado y versionado imágenes siguiendo un criterio coherente."
+    d: "Se han publicado y descargado imágenes de registros públicos y privados."
+    e: "Se ha instalado y configurado un registro privado de imágenes."
+    f: "Se han definido aplicaciones multicontenedor con Docker Compose, incluyendo redes, volúmenes, variables y dependencias."
+    g: "Se han gestionado configuraciones y secretos de forma separada del código de la imagen."
+    h: "Se ha verificado el funcionamiento de la aplicación compuesta y su comportamiento ante el fallo de un servicio."
+RA4:
+  titulo: "Despliega y administra clústeres de orquestación de contenedores, gestionando la ejecución, actualización y escalado de aplicaciones."
+  ce:
+    a: "Se han identificado los componentes del plano de control y de los nodos de un clúster Kubernetes y su función."
+    b: "Se han desplegado entornos de pruebas con herramientas como kind o Minikube."
+    c: "Se ha instalado un clúster de varios nodos con kubeadm."
+    d: "Se han descrito los servicios gestionados de Kubernetes en la nube y sus diferencias con un clúster propio."
+    e: "Se han gestionado objetos del clúster de forma declarativa mediante manifiestos YAML."
+    f: "Se han desplegado aplicaciones con Pods, ReplicaSets, Deployments, StatefulSets, DaemonSets y Jobs."
+    g: "Se han aplicado actualizaciones progresivas y se ha revertido una versión defectuosa."
+    h: "Se ha configurado el escalado manual y automático de aplicaciones."
+    i: "Se han empaquetado y desplegado aplicaciones con Helm o Kustomize."
+RA5:
+  titulo: "Configura la conectividad y el almacenamiento de las plataformas de contenedores, garantizando el acceso a los servicios y la persistencia de los datos."
+  ce:
+    a: "Se han configurado los modelos de red de Docker (bridge, host, none, macvlan y overlay)."
+    b: "Se ha descrito el modelo de red de Kubernetes y el papel de los complementos CNI."
+    c: "Se han expuesto aplicaciones mediante Services de tipo ClusterIP, NodePort y LoadBalancer."
+    d: "Se ha configurado el enrutamiento HTTP/HTTPS externo mediante Ingress o Gateway API."
+    e: "Se ha utilizado el descubrimiento de servicios por DNS dentro de la plataforma."
+    f: "Se han configurado volúmenes efímeros y persistentes en Docker y en Kubernetes."
+    g: "Se han utilizado PersistentVolumes, PersistentVolumeClaims y StorageClasses con aprovisionamiento dinámico."
+    h: "Se ha comprobado que los datos persisten tras eliminar, reprogramar o actualizar los contenedores."
+RA6:
+  titulo: "Aplica medidas de seguridad, control de accesos, monitorización y alta disponibilidad a plataformas de contenedores, siguiendo buenas prácticas."
+  ce:
+    a: "Se han identificado los riesgos de seguridad propios de los contenedores y de la cadena de suministro de imágenes."
+    b: "Se han ejecutado contenedores con usuarios sin privilegios, capacidades mínimas y sistema de archivos de solo lectura."
+    c: "Se han analizado imágenes en busca de vulnerabilidades y se han corregido las detectadas."
+    d: "Se han aplicado políticas de red para restringir la comunicación entre aplicaciones."
+    e: "Se ha configurado el control de acceso basado en roles (RBAC) y las cuentas de servicio."
+    f: "Se han aplicado los estándares de seguridad de Pods y los límites de recursos por espacio de nombres."
+    g: "Se han recogido métricas y registros con herramientas del ecosistema y se han creado paneles y alertas."
+    h: "Se ha desplegado una aplicación con alta disponibilidad y se ha comprobado su tolerancia a fallos."
+    i: "Se han documentado los procedimientos de despliegue, operación y recuperación."
